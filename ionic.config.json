@@ -1,0 +1,7 @@
+{
+  "name": "ProjeotoMobile2022",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
