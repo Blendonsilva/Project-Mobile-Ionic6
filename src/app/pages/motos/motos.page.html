@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Carros a Venda
+    </ion-title>
+    <ion-button slot="end">
+      
+      <ion-button routerLink="/home">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/pagamento" class="ion-text-center">
+          <ion-title>
+            <ion-card-tittle>MT-10 1000cc 2023</ion-card-tittle>
+          </ion-title>
+          <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2021/11/Yamaha-MT-10-2022-5-800x534.jpg" width="400" height="250" >
+          <ion-text color="secondary">
+            <h5>70.900R$ Financiamento com 20% de entrada</h5>
+          </ion-text>
+          <ion-button routerLink="/pagamento">
+            <ion-icon name="bag-check-outline"></ion-icon>
+          </ion-button>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/pagamento" class="ion-text-center">
+          <ion-title>
+            <ion-card-tittle>GT Sport - Mercedes-AMG GT S '15</ion-card-tittle>
+          </ion-title>
+          <img src="https://www.motonline.com.br/noticia/wp-content/uploads/2021/11/2021-rebel-500-gallery-05-2400xauto-800x420.jpg" width="400" height="250" >
+          <ion-text color="secondary">
+            <h5>87.500R$ Financiamento com 20% de entrada</h5>
+          </ion-text>
+          <ion-button routerLink="/civic">
+            <ion-icon name="bag-check-outline"></ion-icon>
+          </ion-button>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

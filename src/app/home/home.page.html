@@ -1,20 +1,65 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Bem Vindo a CrudCars
+
     </ion-title>
+    <ion-button slot="end">
+      
+      <ion-button routerLink="/login">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/carros" class="ion-text-center">
+          <img src="https://cdn-icons.flaticon.com/png/512/1048/premium/1048361.png?token=exp=1655070337~hmac=b6aa239694afd6b0de396ec95b8b1a2e" width="100" height="100" >
+          <ion-card-header>
+            <ion-card-tittle>Carros a venda</ion-card-tittle>
+          </ion-card-header>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/motos" class="ion-text-center">
+          <img src="https://cdn-icons.flaticon.com/png/512/2264/premium/2264768.png?token=exp=1655070420~hmac=f3e842aeba4211902b03cac1f6198652" width="100" height="100" >
+          <ion-card-header>
+            <ion-card-tittle>Motos a venda</ion-card-tittle>
+          </ion-card-header>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/vendedor" class="ion-text-center">
+          <img src="https://cdn.icon-icons.com/icons2/39/PNG/128/bootloader_users_person_people_6080.png" width="100" height="100" >
+          <ion-card-header>
+            <ion-card-tittle>Vendedor</ion-card-tittle>
+          </ion-card-header>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/gerente" class="ion-text-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/4205/4205906.png" width="100" height="100" >
+          <ion-card-header>
+            <ion-card-tittle>Gerente</ion-card-tittle>
+          </ion-card-header>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

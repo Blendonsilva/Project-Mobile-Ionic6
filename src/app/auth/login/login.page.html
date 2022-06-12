@@ -1,0 +1,35 @@
+<ion-content color="primary" padding>
+  <h1 class="ion-text-center">
+    <img src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2018%2F06%2F03%2F23%2FLogo-241575_341712_234842074_922774443.jpg" width="300" height="300">
+  </h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Login</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input type="email" formControlName="email" placeholder="your@email.com"></ion-input>
+                <ion-note slot="end" color="danger" *ngIf="email.dirty && email.hasError('required')">Obrigatorio</ion-note>
+                <ion-note slot="end" color="danger" *ngIf="email.dirty && email.hasError('email')">Email inválido</ion-note>
+              </ion-item>
+              <ion-item>
+                <ion-input type="password" formControlName="senha" placeholder="Password"></ion-input>
+                <ion-note slot="end" color="danger" *ngIf="senha.dirty && senha.hasError('required')">Obrigatorio</ion-note>
+                <ion-note slot="end" color="danger" *ngIf="senha.dirty && senha.hasError('minlergth')">Senha inválida</ion-note>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button size="large" type="submit" expand="block"
+              [disabled]="loginForm.invalid">
+              
+                Login</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  
+</ion-content>

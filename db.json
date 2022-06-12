@@ -1,0 +1,22 @@
+{
+    "alunos":[
+        {"id": 1,
+        "nome": "blendon",
+        "email":"blendon@blendon",
+        "telefone": "1231931231",
+        "turmaid": "1"
+    }
+    ],
+    "professor":[
+        {"id":"1",
+        "nome":"Carlos",
+        "email":"Carlos@Carlos",
+        "turmas":"1,3,5"
+        },
+        {"id":"2",
+        "nome":"Luan",
+        "email":"Luan@Luan",
+        "turmas":"2,4,6"
+        }
+    ]
+}

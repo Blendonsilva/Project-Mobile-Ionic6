@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Vendedores da CrudCars
+
+    </ion-title>
+    <ion-button slot="end">
+      
+      <ion-button routerLink="/home">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <img src="https://cdn-icons-png.flaticon.com/512/2503/2503707.png" width="100" height="100" >
+      <ion-label> BLENDON FANTONI DA SILVA</ion-label>
+      <div>
+        <ion-button fill="outline" slot="end">BATER PONTO</ion-button>
+      <ion-button fill="outline" slot="end">ADICIONAR VEICULO</ion-button>
+      </div>
+    </ion-item>
+
+    <ion-card-content>
+      Horario de entrada: 07:30
+      Horario de saida: --:--
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <img src="https://cdn-icons-png.flaticon.com/512/2503/2503732.png" width="100" height="100" >
+      <ion-label> LUAN PAIM PEREIRA</ion-label>
+      <div>
+        <ion-button fill="outline" slot="end">BATER PONTO</ion-button>
+      <ion-button fill="outline" slot="end">ADICIONAR VEICULO</ion-button>
+      </div>
+    </ion-item>
+    <ion-card-content>
+      Horario de entrada: 08:30
+      Horario de saida: --:--
+    </ion-card-content>
+  </ion-card>
+  <div>
+    <ion-button size="large" routerLink="/registrar"  type="submit" expand="block">Cadastrar funcionario</ion-button>
+  </div>
+</ion-content>

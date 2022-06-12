@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Carros a Venda
+    </ion-title>
+    <ion-button slot="end">
+      
+      <ion-button routerLink="/home">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/pagamento" class="ion-text-center">
+          <ion-title>
+            <ion-card-tittle>Honda civic 2022 Ap. 1.8 Turbo+</ion-card-tittle>
+          </ion-title>
+          <img src="http://www.carangospb.com/wp-content/uploads/Caiu-na-net-Novo-Honda-Civic-Type-R-ser%C3%A1-igual-ao-prot%C3%B3tipo-668x476.jpg" width="400" height="300" >
+          <ion-title>
+            <ion-card-tittle>99.900R$ Financiamento com 20% de entrada</ion-card-tittle>
+          </ion-title>
+          <ion-button routerLink="/pagamento">
+            <ion-icon name="bag-check-outline"></ion-icon>
+          </ion-button>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card routerLink="/pagamento" class="ion-text-center">
+          <ion-title>
+            <ion-card-tittle>GT Sport - Mercedes-AMG GT S '15</ion-card-tittle>
+          </ion-title>
+          <img src="https://image.api.playstation.com/cdn/UP9000/CUSA03220_00/CX9PxOVpQpgqAZNm0rdJJF7Bms4EZKeD.png" width="400" height="500" >
+          <ion-title>
+            <ion-card-tittle>199.500R$ Financiamento com 20% de entrada</ion-card-tittle>
+          </ion-title>
+          <ion-button routerLink="/pagamento">
+            <ion-icon name="bag-check-outline"></ion-icon>
+          </ion-button>
+        </ion-card>  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
